@@ -1,0 +1,45 @@
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.conbio
+{
+  height:100%;
+  width:100%;
+  background: linear-gradient(180deg, rgb(45 45 45) 0%, rgb(191 184 150) 100%);
+  position: relative;
+
+
+}
+.bio
+{
+  height: 100%;
+  width:100%;
+  position: relative;
+  overflow: hidden;
+}
+img
+{
+  height:50vh;
+  width:100%;
+  object-fit: cover;
+
+}
+.text
+{
+    font-family: 'Cormorant Garamond', serif;
+  padding: 50px;
+  text-align: left;
+  font-size: 80px;
+  height: 100%;
+  width:100%;
+  word-wrap: break-word;
+
+}
+p
+{
+  display: inline-block;
+  color:#c5c5c5;
+}

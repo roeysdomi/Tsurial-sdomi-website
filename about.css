@@ -1,0 +1,126 @@
+
+*{
+
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+.about-con
+{
+  position: relative;
+width: 100%;
+height: 100vh;
+background:linear-gradient(181deg, rgb(189 182 148) 50%, rgb(239 239 239 / 79%) 100%);
+overflow: hidden;
+}
+
+.about
+{
+
+
+  position:relative;
+  overflow:hidden;
+  width: 100%;
+  height: 100%;
+
+
+}
+.about-pic
+{
+
+  display: inline-block;
+
+transform: rotateZ(16deg);
+position: absolute;
+top: -45px;
+left: -35px;
+z-index: 1;
+border-radius: 70px;
+overflow: hidden;
+}
+.filter-about
+{
+  border-radius: 2px solid blue;
+  position: absolute;
+  background-color: rgba(0,0,0,0,2);
+  top: 65px;
+  left: -170px;
+  height: 700px;
+  width: 1010px;
+  /* backdrop-filter: brightness(4.07) contrast(1.66) hue-rotate(107deg) saturate(1.91);
+  -webkit-backdrop-filter: brightness(4.07) contrast(1.66) hue-rotate(107deg) saturate(1.91); */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotateZ(328deg);
+  z-index: 0;
+}
+.filter-about::before
+{
+  content:'';
+  position: absolute;
+  background: rgba(183, 5, 0,0.33);
+    width:100%;
+    height: 100%;
+}
+
+.filter2
+{
+  border-radius: 2px solid blue;
+position: absolute;
+background-color: rgba(0,0,0,0,2);
+top: 1000px;
+left: -359px;
+height: 500px;
+width: 900px;
+backdrop-filter: brightness(4.07) contrast(1.66) hue-rotate(107deg) saturate(1.91);
+-webkit-backdrop-filter: brightness(4.07) contrast(1.66) hue-rotate(107deg) saturate(1.91);
+transform: rotateZ(56deg);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+z-index: 2;
+}
+.filter2::before
+{
+  content: '';
+  position: absolute;
+  background: rgb(198 174 2 / 42%);
+  width: 100%;
+  height: 100%;
+}
+/* ---------------------- */
+.about-text
+{
+  position: absolute;
+  font-size: 50px;
+  text-align: center;
+  display: inline-block;
+  /* border: 2px solid red; */
+  /* background: linear-gradient(1deg, #111111 0%, rgb(151 150 145 / 48%) 100%); */
+  color: #282828;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  word-wrap: break-word;
+  padding: 8px;
+  z-index: 3;
+}
+.about-text h1
+{
+  margin:61px;
+
+}
+.about-text button
+{
+  display: inline-block;
+  position: absolute;
+  bottom: -166px;
+  left: 50%;
+  background: linear-gradient(1deg, #fffefe 0%, rgb(255 255 255 / 48%) 100%);
+  color: black;
+  transform: translateX(-50%);
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 25px;
+  /* border:none; */
+
+
+
+}
